@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LitMoves Swing Analysis</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: system-ui, -apple-system, sans-serif; background: #0f172a; color: #e2e8f0; min-height: 100vh; }
+  .hero { text-align: center; padding: 60px 20px 40px; }
+  .hero h1 { font-size: 2.4rem; font-weight: 700; letter-spacing: -0.02em; }
+  .hero h1 span { color: #38bdf8; }
+  .hero p { color: #94a3b8; margin-top: 8px; font-size: 1.1rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; max-width: 960px; margin: 0 auto; padding: 0 20px 60px; }
+  .card { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 24px; transition: border-color 0.2s, transform 0.2s; text-decoration: none; color: inherit; }
+  .card:hover { border-color: #38bdf8; transform: translateY(-2px); }
+  .card h2 { font-size: 1.15rem; margin-bottom: 6px; }
+  .card p { color: #94a3b8; font-size: 0.9rem; line-height: 1.5; }
+  .badge { display: inline-block; font-size: 0.7rem; padding: 2px 8px; border-radius: 99px; margin-bottom: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+  .badge.core { background: #0c4a6e; color: #7dd3fc; }
+  .badge.ref { background: #1e3a2f; color: #6ee7b7; }
+  .badge.dev { background: #3b1f2b; color: #fda4af; }
+</style>
+</head>
+<body>
+<div class="hero">
+  <h1>Lit<span>Moves</span></h1>
+  <p>Golf Swing Analysis Reports</p>
+</div>
+<div class="grid">
+  <a class="card" href="all_scores.html">
+    <span class="badge core">Core</span>
+    <h2>Score Sheet</h2>
+    <p>All golfers — pro similarity scores, segment badges, error flags, coaching insights, and skeleton overlays.</p>
+  </a>
+  <a class="card" href="swing_profiles.html">
+    <span class="badge core">Core</span>
+    <h2>Swing Profiles</h2>
+    <p>Per-golfer detailed profiles with metric breakdowns and visual comparisons.</p>
+  </a>
+  <a class="card" href="error_catalog.html">
+    <span class="badge ref">Reference</span>
+    <h2>Error Catalog</h2>
+    <p>All detected swing errors with PNG examples, coaching context, and fix priority.</p>
+  </a>
+  <a class="card" href="swing_types.html">
+    <span class="badge ref">Reference</span>
+    <h2>Swing Types</h2>
+    <p>DTL swing segments — Slotter, Stand-Up, Deep Deliverer, OTT, and more.</p>
+  </a>
+  <a class="card" href="glossary.html">
+    <span class="badge ref">Reference</span>
+    <h2>Glossary</h2>
+    <p>Metric definitions, P-frame positions, and scoring methodology explained.</p>
+  </a>
+  <a class="card" href="error_viz_prototype.html">
+    <span class="badge dev">Dev</span>
+    <h2>Error Viz Prototype</h2>
+    <p>TKC progression with ghost overlays and skeleton arrows.</p>
+  </a>
+</div>
+</body>
+</html>
